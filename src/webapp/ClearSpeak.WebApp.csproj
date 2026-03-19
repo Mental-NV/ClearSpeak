@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <RootNamespace>ClearSpeak.WebApp</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.CognitiveServices.Speech" Version="1.48.2" />
+  </ItemGroup>
+
+  <Target Name="CopySpaAssetsToWwwroot" AfterTargets="Build;Publish">
+    <ItemGroup>
+      <SpaDistFiles Include="..\clientspa\dist\**\*" />
+    </ItemGroup>
+
+    <MakeDir Directories="$(MSBuildProjectDirectory)\wwwroot" />
+    <RemoveDir Directories="$(MSBuildProjectDirectory)\wwwroot\assets" />
+    <Delete Files="$(MSBuildProjectDirectory)\wwwroot\index.html;$(MSBuildProjectDirectory)\wwwroot\favicon.svg;$(MSBuildProjectDirectory)\wwwroot\icons.svg"
+            ContinueOnError="true" />
+    <Copy SourceFiles="@(SpaDistFiles)"
+          DestinationFiles="@(SpaDistFiles->'$(MSBuildProjectDirectory)\wwwroot\%(RecursiveDir)%(Filename)%(Extension)')"
+          SkipUnchangedFiles="true"
+          Condition="'@(SpaDistFiles)' != ''" />
+  </Target>
+</Project>

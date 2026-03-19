@@ -1,0 +1,14 @@
+{
+  "name": "clearspeak",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "build:spa": "npm --prefix src/clientspa run build",
+    "build:web": "dotnet build src/webapp/ClearSpeak.WebApp.csproj",
+    "build": "npm run build:spa && npm run build:web",
+    "dev:spa": "npm --prefix src/clientspa run dev",
+    "dev:web": "dotnet run --project src/webapp/ClearSpeak.WebApp.csproj",
+    "test:spa": "npm --prefix src/clientspa run test",
+    "test:web": "dotnet test tests/ClearSpeak.WebApp.Tests/ClearSpeak.WebApp.Tests.csproj"
+  }
+}

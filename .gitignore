@@ -1,0 +1,16 @@
+bin/
+obj/
+.vs/
+.vscode/
+.idea/
+node_modules/
+dist/
+coverage/
+TestResults/
+src/webapp/wwwroot/
+!src/webapp/wwwroot/.gitkeep
+*.user
+*.suo
+*.cache
+*.log
+*.tmp
