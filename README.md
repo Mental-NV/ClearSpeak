@@ -144,6 +144,6 @@ npm --prefix src/clientspa run test
 - `ffmpeg` missing:
   Canonical WAV uploads can still work, but WebM/MP4 uploads and non-canonical WAV uploads will return a dependency error until `ffmpeg` is installed or `Pronunciation:FfmpegPath` points to a valid binary.
 - App Service manual ffmpeg upload:
-  Upload the Linux binary manually to a persistent path such as `/home/site/tools/ffmpeg/ffmpeg`, set `Pronunciation__FfmpegPath=/home/site/tools/ffmpeg/ffmpeg`.
+  `appsettings.Production.json` sets `Pronunciation:FfmpegPath` to `/home/site/tools/ffmpeg/ffmpeg`. Upload the Linux binary manually to that exact path on the App Service instance, or override it explicitly with `Pronunciation__FfmpegPath` if you store the binary elsewhere.
 - Azure provider configuration error:
   Set `AZURE_SPEECH_ENDPOINT` and `AZURE_SPEECH_KEY`, or switch `Pronunciation:Provider` back to `Fake` for local development.
