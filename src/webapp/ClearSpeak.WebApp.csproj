@@ -9,7 +9,7 @@
     <PackageReference Include="Microsoft.CognitiveServices.Speech" Version="1.48.2" />
   </ItemGroup>
 
-  <Target Name="SyncSpaAssetsToWwwroot" AfterTargets="Build">
+  <Target Name="SyncSpaAssetsToWwwroot" AfterTargets="Build" Condition="'$(Configuration)' != 'Release'">
     <ItemGroup>
       <SpaDistFiles Include="..\clientspa\dist\**\*" />
       <ExistingSpaFiles Include="$(MSBuildProjectDirectory)\wwwroot\**\*"
