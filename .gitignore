@@ -7,6 +7,7 @@ node_modules/
 dist/
 coverage/
 TestResults/
+artifacts/
 src/webapp/wwwroot/
 !src/webapp/wwwroot/.gitkeep
 *.user

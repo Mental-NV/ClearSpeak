@@ -93,6 +93,22 @@ npm run test:web
 npm run test:spa
 ```
 
+## CI/CD
+
+GitHub Actions runs build, test, and publish on:
+
+- pull requests
+- all pushes
+- manual `workflow_dispatch`
+
+The workflow uploads a deployable artifact named `webapp-publish` on every run. Pushes to `master` also deploy that artifact to Azure App Service.
+
+Required GitHub configuration:
+
+- Repository secret: `AZURE_WEBAPP_PUBLISH_PROFILE`
+
+Non-`master` pushes and pull requests build, test, and publish only. `master` pushes build, test, publish, and deploy to Azure App Service.
+
 ## Supported uploads
 
 - `audio/webm;codecs=opus`
