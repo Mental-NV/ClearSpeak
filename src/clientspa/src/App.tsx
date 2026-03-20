@@ -87,7 +87,7 @@ function App() {
         <div className="panel">
           <div className="section-heading">
             <h2>Text to read</h2>
-            <p>Edit the script before you record. The MVP assesses short, scripted reading in en-US.</p>
+            <p>Edit the text if you want, then read it aloud when you're ready.</p>
           </div>
           <textarea
             aria-label="Text to read aloud"
@@ -102,7 +102,7 @@ function App() {
         <div className="panel">
           <div className="section-heading">
             <h2>Recording</h2>
-            <p>Desktop browsers work best. Mobile Safari is best-effort.</p>
+            <p>Record your voice, then listen back before you analyze it.</p>
           </div>
           <div className="recorder-controls">
             <button type="button" className="primary-button" onClick={() => void recorder.startRecording()} disabled={recorder.status === 'recording' || isBusy}>
