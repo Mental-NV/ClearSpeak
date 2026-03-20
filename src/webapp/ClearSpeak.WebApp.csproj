@@ -9,18 +9,28 @@
     <PackageReference Include="Microsoft.CognitiveServices.Speech" Version="1.48.2" />
   </ItemGroup>
 
-  <Target Name="CopySpaAssetsToWwwroot" AfterTargets="Build;Publish">
+  <Target Name="SyncSpaAssetsToWwwroot" AfterTargets="Build">
     <ItemGroup>
       <SpaDistFiles Include="..\clientspa\dist\**\*" />
+      <ExistingSpaFiles Include="$(MSBuildProjectDirectory)\wwwroot\**\*"
+                        Exclude="$(MSBuildProjectDirectory)\wwwroot\.gitkeep" />
     </ItemGroup>
 
     <MakeDir Directories="$(MSBuildProjectDirectory)\wwwroot" />
-    <RemoveDir Directories="$(MSBuildProjectDirectory)\wwwroot\assets" />
-    <Delete Files="$(MSBuildProjectDirectory)\wwwroot\index.html;$(MSBuildProjectDirectory)\wwwroot\favicon.svg;$(MSBuildProjectDirectory)\wwwroot\icons.svg"
-            ContinueOnError="true" />
+    <Delete Files="@(ExistingSpaFiles)" ContinueOnError="true" />
     <Copy SourceFiles="@(SpaDistFiles)"
           DestinationFiles="@(SpaDistFiles->'$(MSBuildProjectDirectory)\wwwroot\%(RecursiveDir)%(Filename)%(Extension)')"
           SkipUnchangedFiles="true"
           Condition="'@(SpaDistFiles)' != ''" />
+  </Target>
+
+  <Target Name="IncludeSpaDistInPublish" BeforeTargets="ComputeFilesToPublish">
+    <ItemGroup>
+      <SpaDistPublishFiles Include="..\clientspa\dist\**\*" />
+      <ResolvedFileToPublish Include="@(SpaDistPublishFiles)" Condition="'@(SpaDistPublishFiles)' != ''">
+        <RelativePath>wwwroot\%(RecursiveDir)%(Filename)%(Extension)</RelativePath>
+        <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      </ResolvedFileToPublish>
+    </ItemGroup>
   </Target>
 </Project>
