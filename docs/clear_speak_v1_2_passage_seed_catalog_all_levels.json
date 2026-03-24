@@ -515,7 +515,6 @@
     "estimatedDurationSeconds": 51,
     "focusTags": [
       "Sentence stress",
-      "Prosody",
       "Rhythm"
     ],
     "topicTags": [
@@ -629,7 +628,6 @@
     "difficulty": "Advanced",
     "estimatedDurationSeconds": 49,
     "focusTags": [
-      "Prosody",
       "Sentence stress",
       "Word stress"
     ],

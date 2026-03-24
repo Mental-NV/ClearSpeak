@@ -130,6 +130,8 @@ The application should support the following retrieval capabilities:
 - sort by recommendation, recency, duration, or difficulty-related ordering
 - retrieve a single passage by id
 
+Topic tag filtering is required at the backend/API layer in v1.2, but it does not need to be exposed as a first-class filter in the v1.2 UI. The v1.2 UI should surface difficulty and focus filters only.
+
 ## Recommendation behavior
 
 The library should support lightweight recommendation logic.
@@ -237,6 +239,8 @@ Recommended query support:
 - search text
 - featured only
 - limit/offset or cursor pagination if needed later
+
+Topic tag query support is required for backend completeness and future recommendation logic, even though the v1.2 frontend does not expose a topic filter control.
 
 ## Non-functional requirements
 

@@ -709,10 +709,10 @@ The backend must support the existing pronunciation assessment pipeline plus new
 ## 18.2 Recommended API surface
 - `GET /api/passages`
 - `GET /api/passages/{id}`
-- `POST /api/assessments`
-- `GET /api/assessments`
-- `GET /api/assessments/{id}`
-- `GET /api/assessments/{id}/compare?baselineId=...`
+- `POST /api/pronunciation/analyze`
+- `GET /api/attempts`
+- `GET /api/attempts/{id}`
+- `GET /api/attempts/{id}/compare?baselineId=...`
 - `GET /api/progress`
 - `GET /api/progress/passages`
 
@@ -725,12 +725,15 @@ The backend must support the existing pronunciation assessment pipeline plus new
 - featured-only filtering
 - pagination support if needed later
 
+Topic tag filtering is **backend-supported in v1.2** so that the data model and API remain future-ready, but it is **not required to be surfaced in the v1.2 user interface**.
+
 ## 18.4 Assessment submission requirements
-Assessment submission must:
+Assessment submission must continue to use the existing `POST /api/pronunciation/analyze` endpoint and must:
 - accept text and recorded audio
+- optionally accept passage metadata such as `passageId` when the attempt comes from the library
 - run the pronunciation pipeline
 - return immediate response data for the current attempt
-- persist saved-attempt data on success
+- persist saved-attempt data on success so the result is available through `/api/attempts`
 
 ## 18.5 Compare requirements
 The backend may either:

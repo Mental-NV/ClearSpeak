@@ -176,6 +176,10 @@ Controls:
 - focus filter: TH, R/L, Vowels, Rhythm, Mixed
 - sort dropdown: Recommended / Recently practiced / Shortest / Newest
 
+Note:
+- topic tag filtering is supported by the backend API for future extensibility
+- topic tag filtering is not surfaced as a v1.2 UI control
+
 #### Section C — Passage library grid/list
 Each passage card shows:
 - title
@@ -835,10 +839,10 @@ v1.2 wireframes assume the backend can now support:
 Suggested API surface:
 - `GET /api/passages`
 - `GET /api/passages/{id}`
-- `POST /api/assessments`
-- `GET /api/assessments`
-- `GET /api/assessments/{id}`
-- `GET /api/assessments/{id}/compare?baselineId=...`
+- `POST /api/pronunciation/analyze`
+- `GET /api/attempts`
+- `GET /api/attempts/{id}`
+- `GET /api/attempts/{id}/compare?baselineId=...`
 - `GET /api/progress`
 - `GET /api/progress/passages`
 
