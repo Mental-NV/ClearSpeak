@@ -365,33 +365,43 @@ Decision:
 
 Add these cross-platform scripts under `scripts/dev/`:
 
-- `setup-local-https.ps1`
+- `setup-local-https.mjs`
   - create cert directory if missing
   - generate a new self-signed cert if missing or expiring within 30 days
   - export `.crt`, `.key`, and `.pfx`
   - write random PFX password to `clearspeak-localhost.password`
   - install trust into the platform trust store
   - write `metadata.json` with thumbprint and expiry
-- `run-web-https.ps1`
-  - export:
+- `run-web-https.mjs`
+  - resolve the platform-specific certificate directory
+  - read `clearspeak-localhost.password`
+  - set:
     - `ASPNETCORE_Kestrel__Certificates__Default__Path`
     - `ASPNETCORE_Kestrel__Certificates__Default__Password`
-  - run `dotnet run --project src/webapp/ClearSpeak.WebApp.csproj --launch-profile https`
+  - spawn `dotnet run --project src/webapp/ClearSpeak.WebApp.csproj --launch-profile https`
 
 Add thin convenience wrappers:
 
 - `setup-local-https.sh`
-  - invokes `pwsh ./scripts/dev/setup-local-https.ps1`
+  - invokes `node ./scripts/dev/setup-local-https.mjs`
 - `run-web-https.sh`
-  - invokes `pwsh ./scripts/dev/run-web-https.ps1`
+  - invokes `node ./scripts/dev/run-web-https.mjs`
 - `setup-local-https.cmd`
-  - invokes `pwsh -File scripts\\dev\\setup-local-https.ps1`
+  - invokes `node scripts\\dev\\setup-local-https.mjs`
 - `run-web-https.cmd`
-  - invokes `pwsh -File scripts\\dev\\run-web-https.ps1`
+  - invokes `node scripts\\dev\\run-web-https.mjs`
+
+Add npm scripts at the repo root:
+
+- `npm run setup:https`
+  - runs `node ./scripts/dev/setup-local-https.mjs`
+- `npm run dev:https`
+  - runs `node ./scripts/dev/run-web-https.mjs`
 
 Decision:
 
-- `pwsh` is the canonical implementation entrypoint because it is cross-platform and keeps certificate generation logic in one place.
+- Node.js is the canonical implementation entrypoint because it is already a required dependency for the frontend and is simpler to standardize across macOS, Windows, and Linux.
+- The Node scripts are the single source of truth for HTTPS setup and launch behavior.
 - The shell and cmd files are wrappers only and must not duplicate logic.
 
 #### Trust Installation Rules
@@ -481,6 +491,7 @@ The implementation should add or modify these areas:
 - `README.md`
 - `.gitignore`
 - `scripts/dev/`
+- `package.json`
 
 ## Delivery Order
 
@@ -524,7 +535,7 @@ Implement in this exact order:
 - macOS: first-time `./scripts/dev/setup-local-https.sh` creates and trusts a cert
 - Linux: first-time `./scripts/dev/setup-local-https.sh` creates a cert and either trusts it automatically or prints exact manual trust commands
 - Windows: first-time `scripts\\dev\\setup-local-https.cmd` creates and trusts a cert
-- `./scripts/dev/run-web-https.sh` on macOS/Linux and `scripts\\dev\\run-web-https.cmd` on Windows serve the app on `https://localhost:7247`
+- `npm run dev:https`, `./scripts/dev/run-web-https.sh`, and `scripts\\dev\\run-web-https.cmd` serve the app on `https://localhost:7247`
 - browser shows a trusted local HTTPS connection
 - Google sign-in succeeds locally against the HTTPS origin
 - signed-in user can analyze audio and see saved data tied to their account
@@ -532,7 +543,7 @@ Implement in this exact order:
 ## Assumptions And Defaults
 
 - v1.2 targets one primary deployment environment and a single SQLite database file is acceptable for that scope.
-- PowerShell 7 (`pwsh`) is available for local development on macOS, Windows, and Linux.
+- Node.js is available for local development on macOS, Windows, and Linux.
 - Cookie auth is intentionally out of scope for this prerequisite layer.
 - SQLite JSON text storage is sufficient for v1.2 filtering and aggregation scale.
 - Role-based authorization is out of scope for v1.2.
