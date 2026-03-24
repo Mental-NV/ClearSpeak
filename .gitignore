@@ -15,3 +15,4 @@ src/webapp/wwwroot/
 *.cache
 *.log
 *.tmp
+.DS_Store

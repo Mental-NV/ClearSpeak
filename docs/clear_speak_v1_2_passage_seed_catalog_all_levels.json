@@ -1,0 +1,645 @@
+[
+  {
+    "id": "beg-mixed-01",
+    "title": "A Walk to School",
+    "text": "I walk to school every morning with my friend. We talk about our classes and wave to our teacher at the gate.",
+    "difficulty": "Beginner",
+    "estimatedDurationSeconds": 24,
+    "focusTags": [
+      "Mixed review"
+    ],
+    "topicTags": [
+      "School",
+      "Daily life"
+    ],
+    "isFeatured": true,
+    "isActive": true,
+    "sortOrder": 1
+  },
+  {
+    "id": "beg-th-01",
+    "title": "Three Thin Things",
+    "text": "Three thin things are on the table. My brother thinks they belong to our mother.",
+    "difficulty": "Beginner",
+    "estimatedDurationSeconds": 18,
+    "focusTags": [
+      "TH"
+    ],
+    "topicTags": [
+      "Daily life"
+    ],
+    "isFeatured": true,
+    "isActive": true,
+    "sortOrder": 2
+  },
+  {
+    "id": "beg-wv-01",
+    "title": "William and Victor",
+    "text": "William wears a warm vest in winter. Victor waves when he sees him near the window.",
+    "difficulty": "Beginner",
+    "estimatedDurationSeconds": 19,
+    "focusTags": [
+      "W vs V"
+    ],
+    "topicTags": [
+      "Daily life",
+      "Story"
+    ],
+    "isFeatured": true,
+    "isActive": true,
+    "sortOrder": 3
+  },
+  {
+    "id": "beg-rl-01",
+    "title": "Laura's Red Ball",
+    "text": "Laura has a red ball and a blue ruler. She rolls the ball across the floor and laughs.",
+    "difficulty": "Beginner",
+    "estimatedDurationSeconds": 20,
+    "focusTags": [
+      "R vs L"
+    ],
+    "topicTags": [
+      "Daily life",
+      "Story"
+    ],
+    "isFeatured": true,
+    "isActive": true,
+    "sortOrder": 4
+  },
+  {
+    "id": "beg-vowels-01",
+    "title": "A Green Sheep",
+    "text": "We see a sheep near the beach. It eats green leaves and sleeps beside a tree.",
+    "difficulty": "Beginner",
+    "estimatedDurationSeconds": 18,
+    "focusTags": [
+      "Long vs short vowels"
+    ],
+    "topicTags": [
+      "Story",
+      "Daily life"
+    ],
+    "isFeatured": false,
+    "isActive": true,
+    "sortOrder": 5
+  },
+  {
+    "id": "beg-rhythm-01",
+    "title": "We Are Late",
+    "text": "We are late for class today, so we walk very fast. Our teacher waits by the door and smiles at us.",
+    "difficulty": "Beginner",
+    "estimatedDurationSeconds": 22,
+    "focusTags": [
+      "Sentence stress",
+      "Rhythm"
+    ],
+    "topicTags": [
+      "School",
+      "Daily life"
+    ],
+    "isFeatured": false,
+    "isActive": true,
+    "sortOrder": 6
+  },
+  {
+    "id": "beg-clusters-01",
+    "title": "Spring Street",
+    "text": "We stop on Spring Street to buy fresh bread. The strong smell makes us smile right away.",
+    "difficulty": "Beginner",
+    "estimatedDurationSeconds": 19,
+    "focusTags": [
+      "Consonant clusters"
+    ],
+    "topicTags": [
+      "Daily life",
+      "Food"
+    ],
+    "isFeatured": false,
+    "isActive": true,
+    "sortOrder": 7
+  },
+  {
+    "id": "beg-stress-01",
+    "title": "A Happy Birthday",
+    "text": "My family is planning a birthday dinner tonight. We are bringing a chocolate cake and a small present.",
+    "difficulty": "Beginner",
+    "estimatedDurationSeconds": 21,
+    "focusTags": [
+      "Word stress"
+    ],
+    "topicTags": [
+      "Daily life",
+      "Food"
+    ],
+    "isFeatured": false,
+    "isActive": true,
+    "sortOrder": 8
+  },
+  {
+    "id": "beg-th-02",
+    "title": "Thursday Weather",
+    "text": "The weather is cool this Thursday morning. We think the sun will shine after lunch.",
+    "difficulty": "Beginner",
+    "estimatedDurationSeconds": 18,
+    "focusTags": [
+      "TH"
+    ],
+    "topicTags": [
+      "Daily life"
+    ],
+    "isFeatured": false,
+    "isActive": true,
+    "sortOrder": 9
+  },
+  {
+    "id": "beg-wv-02",
+    "title": "A Visit to the Village",
+    "text": "We visit a small village every summer. The view is wide, the wind is soft, and the river is very calm.",
+    "difficulty": "Beginner",
+    "estimatedDurationSeconds": 22,
+    "focusTags": [
+      "W vs V"
+    ],
+    "topicTags": [
+      "Travel",
+      "Daily life"
+    ],
+    "isFeatured": false,
+    "isActive": true,
+    "sortOrder": 10
+  },
+  {
+    "id": "beg-rl-02",
+    "title": "Reading in the Library",
+    "text": "Lily reads a long story in the library after lunch. Her little brother listens and looks at the pictures.",
+    "difficulty": "Beginner",
+    "estimatedDurationSeconds": 21,
+    "focusTags": [
+      "R vs L"
+    ],
+    "topicTags": [
+      "School",
+      "Story"
+    ],
+    "isFeatured": false,
+    "isActive": true,
+    "sortOrder": 11
+  },
+  {
+    "id": "beg-mixed-02",
+    "title": "The Early Train",
+    "text": "We take the early train to the city on Friday. Our bags are light, our tickets are ready, and we are excited to go.",
+    "difficulty": "Beginner",
+    "estimatedDurationSeconds": 24,
+    "focusTags": [
+      "Mixed review"
+    ],
+    "topicTags": [
+      "Travel",
+      "Daily life"
+    ],
+    "isFeatured": true,
+    "isActive": true,
+    "sortOrder": 12
+  },
+  {
+    "id": "int-th-clusters-01",
+    "title": "Three Friends on Thursday",
+    "text": "Three friends were walking through the narrow street when they heard a voice from the white house on the hill. They thought the weather would change, but the path stayed dry and clear.",
+    "difficulty": "Intermediate",
+    "estimatedDurationSeconds": 35,
+    "focusTags": [
+      "TH",
+      "Consonant clusters"
+    ],
+    "topicTags": [
+      "Story",
+      "Daily life"
+    ],
+    "isFeatured": true,
+    "isActive": true,
+    "sortOrder": 101
+  },
+  {
+    "id": "int-wv-01",
+    "title": "Victor and William",
+    "text": "William waited near the window while Victor looked for a warm vest and a white sweater. When the wind grew stronger, they walked quickly toward the village square.",
+    "difficulty": "Intermediate",
+    "estimatedDurationSeconds": 34,
+    "focusTags": [
+      "W vs V"
+    ],
+    "topicTags": [
+      "Daily life",
+      "Story"
+    ],
+    "isFeatured": true,
+    "isActive": true,
+    "sortOrder": 102
+  },
+  {
+    "id": "int-rl-01",
+    "title": "Laura's Red Scarf",
+    "text": "Laura rarely wears bright red clothes, but she really liked the long scarf she found near the glass door. Later, she wrapped it around her shoulders and smiled at her reflection.",
+    "difficulty": "Intermediate",
+    "estimatedDurationSeconds": 37,
+    "focusTags": [
+      "R vs L"
+    ],
+    "topicTags": [
+      "Daily life",
+      "Story"
+    ],
+    "isFeatured": true,
+    "isActive": true,
+    "sortOrder": 103
+  },
+  {
+    "id": "int-vowels-01",
+    "title": "The Green Sheep",
+    "text": "The team agreed to meet near the beach before dinner, but Steve arrived early and sat by the ship museum instead. He still had time to eat a light meal and read his ticket twice.",
+    "difficulty": "Intermediate",
+    "estimatedDurationSeconds": 38,
+    "focusTags": [
+      "Long vs short vowels"
+    ],
+    "topicTags": [
+      "Travel",
+      "Story"
+    ],
+    "isFeatured": true,
+    "isActive": true,
+    "sortOrder": 104
+  },
+  {
+    "id": "int-stress-01",
+    "title": "Running Late for Work",
+    "text": "We were supposed to leave at seven, but the traffic was heavy and the manager was already waiting for us. By the time we reached the office, everyone had started the meeting without us.",
+    "difficulty": "Intermediate",
+    "estimatedDurationSeconds": 39,
+    "focusTags": [
+      "Sentence stress",
+      "Rhythm"
+    ],
+    "topicTags": [
+      "Work",
+      "Daily life"
+    ],
+    "isFeatured": true,
+    "isActive": true,
+    "sortOrder": 105
+  },
+  {
+    "id": "int-clusters-01",
+    "title": "Spring Street Market",
+    "text": "The students crossed Spring Street and stopped at the small market beside the train station. Fresh bread, strong coffee, and striped fruit bags were stacked near the entrance.",
+    "difficulty": "Intermediate",
+    "estimatedDurationSeconds": 36,
+    "focusTags": [
+      "Consonant clusters"
+    ],
+    "topicTags": [
+      "Daily life",
+      "Food"
+    ],
+    "isFeatured": false,
+    "isActive": true,
+    "sortOrder": 106
+  },
+  {
+    "id": "int-word-stress-01",
+    "title": "A Comfortable Apartment",
+    "text": "The apartment was comfortable, attractive, and surprisingly quiet for the neighborhood. Amanda preferred the second bedroom because the window faced a small garden behind the building.",
+    "difficulty": "Intermediate",
+    "estimatedDurationSeconds": 38,
+    "focusTags": [
+      "Word stress"
+    ],
+    "topicTags": [
+      "Daily life",
+      "Home"
+    ],
+    "isFeatured": false,
+    "isActive": true,
+    "sortOrder": 107
+  },
+  {
+    "id": "int-rhythm-02",
+    "title": "Before the Presentation",
+    "text": "Before the presentation began, Daniel checked the projector, printed the final schedule, and quietly reviewed his opening lines. He wanted to sound calm, clear, and ready for every question.",
+    "difficulty": "Intermediate",
+    "estimatedDurationSeconds": 39,
+    "focusTags": [
+      "Rhythm",
+      "Sentence stress"
+    ],
+    "topicTags": [
+      "Work",
+      "Presentation"
+    ],
+    "isFeatured": false,
+    "isActive": true,
+    "sortOrder": 108
+  },
+  {
+    "id": "int-th-wv-01",
+    "title": "Weather in the Valley",
+    "text": "The weather in the valley was warmer than they expected, so they left their heavy coats in the car. After lunch, they drove toward a wide river and watched the clouds move slowly south.",
+    "difficulty": "Intermediate",
+    "estimatedDurationSeconds": 39,
+    "focusTags": [
+      "TH",
+      "W vs V"
+    ],
+    "topicTags": [
+      "Travel",
+      "Story"
+    ],
+    "isFeatured": false,
+    "isActive": true,
+    "sortOrder": 109
+  },
+  {
+    "id": "int-vowels-02",
+    "title": "A Good Cook at School",
+    "text": "Julia looked through the school cookbook before choosing a simple soup for the class project. The recipe used fresh beans, soft noodles, and a spoonful of smooth cream.",
+    "difficulty": "Intermediate",
+    "estimatedDurationSeconds": 35,
+    "focusTags": [
+      "Long vs short vowels"
+    ],
+    "topicTags": [
+      "School",
+      "Food"
+    ],
+    "isFeatured": false,
+    "isActive": true,
+    "sortOrder": 110
+  },
+  {
+    "id": "int-rl-clusters-01",
+    "title": "Across the Railroad Bridge",
+    "text": "A large delivery truck rolled slowly across the railroad bridge while Clara waited near the bright blue railing. From there, she could clearly hear the river below and the train beyond the hill.",
+    "difficulty": "Intermediate",
+    "estimatedDurationSeconds": 40,
+    "focusTags": [
+      "R vs L",
+      "Consonant clusters"
+    ],
+    "topicTags": [
+      "Travel",
+      "Story"
+    ],
+    "isFeatured": false,
+    "isActive": true,
+    "sortOrder": 111
+  },
+  {
+    "id": "int-mixed-review-01",
+    "title": "The Early Train South",
+    "text": "Heather checked the platform twice before the early train arrived, then quietly warned the others to move faster and stay together. Their tickets were ready, their bags were light, and the route was finally clear.",
+    "difficulty": "Intermediate",
+    "estimatedDurationSeconds": 41,
+    "focusTags": [
+      "Mixed review",
+      "Rhythm"
+    ],
+    "topicTags": [
+      "Travel",
+      "Story"
+    ],
+    "isFeatured": true,
+    "isActive": true,
+    "sortOrder": 112
+  },
+  {
+    "id": "adv-th-rhythm-01",
+    "title": "The Thoughtful Chairman",
+    "text": "The chairman thanked the three researchers for their thorough presentation, then asked whether the theoretical framework had changed during the final month of the study. Although the discussion grew tense, they answered with thoughtful precision and steady confidence.",
+    "difficulty": "Advanced",
+    "estimatedDurationSeconds": 47,
+    "focusTags": [
+      "TH",
+      "Sentence stress",
+      "Rhythm"
+    ],
+    "topicTags": [
+      "Work",
+      "Presentation",
+      "Story"
+    ],
+    "isFeatured": true,
+    "isActive": true,
+    "sortOrder": 201
+  },
+  {
+    "id": "adv-wv-01",
+    "title": "The Winter Voyage",
+    "text": "Victor and William volunteered to review the weather warnings before the vessel departed, because violent waves and heavy wind were expected near the western coast. By evening, every traveler on board was watching the horizon with visible concern.",
+    "difficulty": "Advanced",
+    "estimatedDurationSeconds": 46,
+    "focusTags": [
+      "W vs V",
+      "Sentence stress"
+    ],
+    "topicTags": [
+      "Travel",
+      "Story"
+    ],
+    "isFeatured": true,
+    "isActive": true,
+    "sortOrder": 202
+  },
+  {
+    "id": "adv-rl-01",
+    "title": "Laura's Remarkable Lecture",
+    "text": "Laura delivered a remarkably clear lecture on urban rail development, explaining why local leaders rarely agree on long-term infrastructure plans. Her relaxed delivery and carefully balanced examples made the argument both lively and memorable.",
+    "difficulty": "Advanced",
+    "estimatedDurationSeconds": 44,
+    "focusTags": [
+      "R vs L",
+      "Word stress"
+    ],
+    "topicTags": [
+      "Work",
+      "Presentation",
+      "School"
+    ],
+    "isFeatured": true,
+    "isActive": true,
+    "sortOrder": 203
+  },
+  {
+    "id": "adv-vowels-01",
+    "title": "The Museum Committee",
+    "text": "The museum committee agreed to keep the ancient silver tools in a secure room until the new exhibit was complete, but several members insisted that the public should still view detailed images in the weekly bulletin. The issue seemed simple at first, yet the final decision required a surprisingly long meeting.",
+    "difficulty": "Advanced",
+    "estimatedDurationSeconds": 55,
+    "focusTags": [
+      "Long vs short vowels",
+      "Word stress"
+    ],
+    "topicTags": [
+      "Work",
+      "School",
+      "Story"
+    ],
+    "isFeatured": false,
+    "isActive": true,
+    "sortOrder": 204
+  },
+  {
+    "id": "adv-clusters-01",
+    "title": "Strict Street Instructions",
+    "text": "The district inspector strongly suggested that pedestrians avoid the construction zone near the station, because several trucks, stacked crates, and temporary steel structures were blocking the narrowest stretch of the street. Even experienced drivers found the route unexpectedly difficult.",
+    "difficulty": "Advanced",
+    "estimatedDurationSeconds": 50,
+    "focusTags": [
+      "Consonant clusters",
+      "Rhythm"
+    ],
+    "topicTags": [
+      "Daily life",
+      "Work",
+      "Story"
+    ],
+    "isFeatured": false,
+    "isActive": true,
+    "sortOrder": 205
+  },
+  {
+    "id": "adv-stress-01",
+    "title": "A Quiet but Serious Warning",
+    "text": "When the director finally addressed the staff, her message was calm but unmistakably serious: if the regional office failed to improve communication, the entire schedule for the autumn release would have to be reconsidered. Nobody in the room misunderstood the importance of her warning.",
+    "difficulty": "Advanced",
+    "estimatedDurationSeconds": 51,
+    "focusTags": [
+      "Sentence stress",
+      "Prosody",
+      "Rhythm"
+    ],
+    "topicTags": [
+      "Work",
+      "Presentation"
+    ],
+    "isFeatured": true,
+    "isActive": true,
+    "sortOrder": 206
+  },
+  {
+    "id": "adv-word-stress-01",
+    "title": "An Uncomfortable Conversation",
+    "text": "During the committee interview, the candidate described a communication problem that had gradually become impossible to ignore, emphasizing that the organization needed a more transparent administrative structure. The explanation was accurate, but several listeners still found it uncomfortable.",
+    "difficulty": "Advanced",
+    "estimatedDurationSeconds": 49,
+    "focusTags": [
+      "Word stress",
+      "Sentence stress"
+    ],
+    "topicTags": [
+      "Work",
+      "Conversation"
+    ],
+    "isFeatured": false,
+    "isActive": true,
+    "sortOrder": 207
+  },
+  {
+    "id": "adv-th-wv-01",
+    "title": "The Weather Review",
+    "text": "The weather review was scheduled for Thursday evening, when the aviation team would evaluate whether the northern route remained viable. While the senior forecaster spoke, the younger observers were writing every warning, variation, and threshold value on a wide display board.",
+    "difficulty": "Advanced",
+    "estimatedDurationSeconds": 50,
+    "focusTags": [
+      "TH",
+      "W vs V",
+      "Consonant clusters"
+    ],
+    "topicTags": [
+      "Work",
+      "Presentation",
+      "Story"
+    ],
+    "isFeatured": false,
+    "isActive": true,
+    "sortOrder": 208
+  },
+  {
+    "id": "adv-rl-rhythm-01",
+    "title": "Railway Relocation Plan",
+    "text": "City planners released a preliminary railway relocation plan after several local residents complained about late-night freight traffic. Although the proposal appeared reasonable on paper, reporters quickly realized that the legal process would almost certainly become longer and more complicated than expected.",
+    "difficulty": "Advanced",
+    "estimatedDurationSeconds": 51,
+    "focusTags": [
+      "R vs L",
+      "Rhythm",
+      "Sentence stress"
+    ],
+    "topicTags": [
+      "Work",
+      "Daily life",
+      "Story"
+    ],
+    "isFeatured": false,
+    "isActive": true,
+    "sortOrder": 209
+  },
+  {
+    "id": "adv-vowels-02",
+    "title": "The Blue Room Decision",
+    "text": "At noon, the executive group moved from the crowded public hall to a quiet blue room, where they reviewed every budget issue before approving the final proposal. Even those who usually spoke very little were eager to raise a few careful objections.",
+    "difficulty": "Advanced",
+    "estimatedDurationSeconds": 47,
+    "focusTags": [
+      "Long vs short vowels",
+      "Rhythm"
+    ],
+    "topicTags": [
+      "Work",
+      "Presentation"
+    ],
+    "isFeatured": false,
+    "isActive": true,
+    "sortOrder": 210
+  },
+  {
+    "id": "adv-mixed-review-01",
+    "title": "Before the Regional Conference",
+    "text": "Before the regional conference began, Heather reviewed the printed schedule, confirmed the arrival of three invited speakers, and quietly reminded the volunteers to welcome every visitor at the front entrance. The event looked calm from a distance, but the team was managing dozens of moving parts behind the scenes.",
+    "difficulty": "Advanced",
+    "estimatedDurationSeconds": 55,
+    "focusTags": [
+      "Mixed review",
+      "Sentence stress",
+      "Rhythm"
+    ],
+    "topicTags": [
+      "Work",
+      "Presentation",
+      "Story"
+    ],
+    "isFeatured": true,
+    "isActive": true,
+    "sortOrder": 211
+  },
+  {
+    "id": "adv-prosody-01",
+    "title": "The Final Recommendation",
+    "text": "After weeks of review, the advisory panel issued its final recommendation with unusual caution, acknowledging that the evidence was persuasive but not complete. Their conclusion was carefully phrased, because even a small shift in tone could influence how the public understood the report.",
+    "difficulty": "Advanced",
+    "estimatedDurationSeconds": 49,
+    "focusTags": [
+      "Prosody",
+      "Sentence stress",
+      "Word stress"
+    ],
+    "topicTags": [
+      "Work",
+      "Presentation",
+      "Story"
+    ],
+    "isFeatured": true,
+    "isActive": true,
+    "sortOrder": 212
+  }
+]
